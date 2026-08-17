@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Above the Line — Rubber Bridge Scorer</title>
+<meta name="description" content="A scorepad for in-person rubber bridge, with partner and opponent analytics no other bridge app offers.">
+<link rel="icon" href="favicon.png">
+<style>
+  :root {
+    --felt: #1f4d3d;
+    --felt-dark: #173a2e;
+    --brass: #b8863b;
+    --brass-bright: #d9a94a;
+    --paper: #f6f1e4;
+    --paper-dim: #ece3cd;
+    --ink: #1f2a24;
+    --ink-muted: #5b6b62;
+    --cranberry: #a4432f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .hero {
+    background: linear-gradient(180deg, #245a48, var(--felt-dark));
+    color: var(--paper);
+    padding: 56px 20px 64px;
+    text-align: center;
+  }
+  .hero .mark {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+  }
+  .hero h1 {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--paper-dim);
+    max-width: 46ch;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+
+  .layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .layout .copy { flex: 1 1 320px; min-width: 280px; }
+  .layout .shot { flex: 0 0 auto; margin: 0 auto; }
+  .layout .shot img {
+    width: 220px;
+    border-radius: 28px;
+    border: 6px solid #0c0d10;
+    box-shadow: 0 20px 40px rgba(20,20,24,0.22);
+    display: block;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--brass);
+    margin: 0 0 14px;
+  }
+
+  ul.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    display: grid;
+    gap: 14px;
+  }
+  ul.features li {
+    background: #fff;
+    border: 1.5px solid rgba(31,42,36,0.12);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  ul.features li b { color: var(--felt); }
+
+  p.lede {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+  p.lede + p.lede { margin-top: 12px; }
+
+  .cta {
+    margin-top: 36px;
+    padding: 22px;
+    border-radius: 18px;
+    background: var(--paper-dim);
+    border: 1.5px solid rgba(31,42,36,0.12);
+    text-align: center;
+  }
+  .cta p { margin: 0 0 6px; font-size: 14px; color: var(--ink-muted); }
+  .cta .badge {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: var(--brass);
+    color: var(--paper);
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 28px 20px 40px;
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+  footer a { color: var(--felt); font-weight: 700; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <img class="mark" src="icon-512.png" alt="Above the Line app icon">
+    <h1>Above the Line</h1>
+    <p>A scorepad for in-person rubber bridge, built for people who already know how to play and just want the arithmetic (and the memory) handled for you.</p>
+  </div>
+
+  <main>
+    <div class="layout">
+      <div class="copy">
+        <h2>At the table</h2>
+        <p class="lede">Enter each hand fast: contract, declarer, doubled or redoubled, made or down. Vulnerability, game legs, and the rubber bonus are all tracked automatically, correctly, hand to hand, including the parts other scoring apps get wrong, like carrying vulnerability across games within a rubber.</p>
+
+        <h2 style="margin-top:32px;">After the table</h2>
+        <p class="lede">This is where Above the Line is different. Every rubber you play quietly builds a picture of how you actually play.</p>
+
+        <ul class="features">
+          <li><b>Win rate and margin</b> by partner, and by opponent</li>
+          <li><b>Trends over time</b>, not just a single session's tally</li>
+          <li><b>Doubled-contract record</b>, slam attempts, declarer vs. defender performance</li>
+          <li><b>Contract frequency</b>: which bids you make most, and how often they hold up</li>
+        </ul>
+
+        <p class="lede">No competitor tracks any of this. Most stop at a single game's scoresheet.</p>
+      </div>
+      <div class="shot">
+        <img src="screenshot-home.png" alt="Above the Line home screen showing past rubbers and win/loss record">
+      </div>
+    </div>
+
+    <div class="cta">
+      <p>No account, no sign-in, no server. Your games live on your device.</p>
+      <span class="badge">Coming soon to the App Store</span>
+    </div>
+  </main>
+
+  <footer>
+    Questions or feedback? <a href="support.html">Visit Support</a>
+  </footer>
+
+</body>
+</html>

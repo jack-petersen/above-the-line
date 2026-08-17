@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Above the Line</title>
+<meta name="description" content="Support and frequently asked questions for Above the Line, a rubber bridge scorer.">
+<link rel="icon" href="favicon.png">
+<style>
+  :root {
+    --felt: #1f4d3d;
+    --felt-dark: #173a2e;
+    --brass: #b8863b;
+    --paper: #f6f1e4;
+    --paper-dim: #ece3cd;
+    --ink: #1f2a24;
+    --ink-muted: #5b6b62;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    background: linear-gradient(180deg, #245a48, var(--felt-dark));
+    color: var(--paper);
+    padding: 40px 20px 44px;
+    text-align: center;
+  }
+  header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 6px;
+  }
+  header p { color: var(--paper-dim); margin: 0; font-size: 15px; }
+
+  main {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 40px 20px 72px;
+  }
+
+  .contact {
+    background: #fff;
+    border: 1.5px solid rgba(31,42,36,0.14);
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .contact p { margin: 0 0 10px; font-size: 14px; color: var(--ink-muted); }
+  .contact a.email {
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 999px;
+    background: var(--brass);
+    color: var(--paper);
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--brass);
+    margin: 0 0 16px;
+  }
+
+  .faq { display: grid; gap: 16px; margin-bottom: 8px; }
+  .faq details {
+    background: #fff;
+    border: 1.5px solid rgba(31,42,36,0.12);
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+  .faq summary {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .faq p {
+    margin: 10px 0 0;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-muted);
+  }
+
+  footer {
+    text-align: center;
+    padding: 0 20px 40px;
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+  footer a { color: var(--felt); font-weight: 700; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <header>
+    <img src="icon-512.png" alt="Above the Line app icon">
+    <h1>Support</h1>
+    <p>Above the Line — Rubber Bridge Scorer</p>
+  </header>
+
+  <main>
+    <div class="contact">
+      <p>Questions, bug reports, or feature requests — email us directly:</p>
+      <a class="email" href="mailto:johnhenrypetersen@gmail.com">johnhenrypetersen@gmail.com</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Is my data private?</summary>
+        <p>Yes. Above the Line has no account system and no server — every rubber, hand, and stat is stored only on your device. Nothing is uploaded or shared.</p>
+      </details>
+      <details>
+        <summary>Does it sync across devices?</summary>
+        <p>Not currently. Your games live on the device you enter them on. Cross-device sync isn't part of the app today.</p>
+      </details>
+      <details>
+        <summary>Can it help me bid or play a hand?</summary>
+        <p>No. Above the Line is a scorekeeping companion for a real, in-person game played with real cards at a real table — it doesn't simulate bidding or play.</p>
+      </details>
+      <details>
+        <summary>What bridge variants are supported?</summary>
+        <p>Rubber bridge only. Duplicate and tournament formats aren't part of the app.</p>
+      </details>
+      <details>
+        <summary>Which platforms is it available on?</summary>
+        <p>iPhone, via the App Store.</p>
+      </details>
+    </div>
+  </main>
+
+  <footer>
+    <a href="index.html">&larr; Back to Above the Line</a>
+  </footer>
+
+</body>
+</html>
